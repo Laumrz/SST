@@ -1,0 +1,197 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif; /* Cambiado a la fuente de la segunda hoja de estilos */
+}
+
+html {
+    font-size: 14px; /* Ajustado para coincidir con el tamaño de fuente de la segunda hoja */
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #2b2f4b; /* Cambiado a un color de fondo más oscuro */
+    color: #fff; /* Cambiado el color del texto para que sea blanco */
+    padding: 20px;
+    margin: 0;
+    font-size: 14px; /* Ajustado para coincidir con la segunda hoja de estilos */
+}
+
+header {
+    width: 100%;
+    height: 10vh; /* Reducido a un 40% de la altura de la ventana de visualización */
+    background-color: #2b2f4b;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem; /* Reducido el tamaño de la fuente */
+    font-weight: 500;
+    font-family: 'Ubuntu'; /* Fuente especificada en la segunda hoja */
+}
+
+
+nav {
+    background-color: #2b2f4b; /* Cambiado a un color oscuro */
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff; /* Cambiado a blanco */
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #556ee9; /* Cambiado al color especificado en la segunda hoja de estilos */
+}
+
+section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 40px;
+}
+
+h2 {
+    color: #2b2f4b; /* Ajustado al color de texto en la segunda hoja de estilos */
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2b2f4b; /* Cambiado al color especificado */
+    padding-bottom: 10px;
+}
+
+p, li {
+    color: #2b2f4b; /* Cambiado al color de texto en la segunda hoja de estilos */
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+ul, ol {
+    margin-left: 20px;
+}
+
+ul li {
+    list-style: disc;
+}
+
+ol li {
+    list-style: decimal;
+}
+
+a.button {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 20px;
+    background-color: #556ee9; /* Cambiado al color especificado */
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+a.button:hover {
+    background-color: #2b2f4b; /* Cambiado al color oscuro especificado */
+    transform: translateY(-2px);
+}
+
+footer {
+    background-color: #2b2f4b; /* Cambiado a un color oscuro */
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    border-radius: 8px 8px 0 0;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+label {
+    font-weight: 500;
+    color: #2b2f4b; /* Cambiado al color especificado en la segunda hoja */
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #bdc3c7;
+    font-size: 1rem;
+    outline: none;
+    width: 100%;
+    background-color: #fff; /* Ajustado para coincidir con el diseño más claro */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #556ee9; /* Cambiado al color de enfoque */
+    box-shadow: 0 0 5px rgba(85, 110, 233, 0.3);
+}
+
+input[type="submit"] {
+    background-color: #556ee9; /* Cambiado al color especificado */
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"]:hover {
+    background-color: #2b2f4b; /* Cambiado al color oscuro especificado */
+    transform: translateY(-2px);
+}
+
+input[type="submit"]:active {
+    transform: translateY(1px);
+}
+
+select {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #bdc3c7;
+    font-size: 1rem;
+    outline: none;
+    width: 100%;
+    background-color: #fff; /* Ajustado para coincidir con el diseño más claro */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
